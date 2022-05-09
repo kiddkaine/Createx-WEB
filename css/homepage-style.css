@@ -225,6 +225,11 @@
 	text-align: center;
 }
 
+.block__heading-left {
+	text-align: left;
+	width:60%;
+}
+
 .block__text {
 	font-size: 18px;
 	color: #787A80;
@@ -352,6 +357,10 @@
 
 /* Услуги */
 
+.services {
+	margin-bottom: 200px;
+}
+
 .service__idle {
 	display: flex;
 	justify-content: space-between;
@@ -366,11 +375,36 @@
 	padding: 100px 0;
 	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.06);
 	cursor: pointer;
+	position: relative;
+}
+
+.img__hover {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top:0;
+	opacity: 0;
+	filter: blur(2.5px);
+	transition: .25s linear;
+}
+
+.service__item:hover .service__head {
+	color: white;
+}
+
+.service__item:hover .service__icon {
+	color: white;
+}
+
+.service__item:hover .img__hover {
+	opacity: 1;
 }
 
 .service__icon {
 	color: #FF5A30;
 	font-size: 50px;
+	transition: .25s linear;
 }
 
 .service__head {
@@ -379,6 +413,7 @@
 	font-size: 20px;
 	font-weight: bold;
 	color: #1E212C;
+	transition: .25s linear;
 }
 
 .view__all {
@@ -386,7 +421,7 @@
 	justify-content: center;
 	gap: 40px;
 	align-items: center;
-	margin: 80px 0 200px 0;
+	margin-top: 80px;
 }
 
 .view__head {
@@ -413,4 +448,104 @@
 	border: 1px solid #424551;
 	background-color: #424551;
 	color: #FFFFFF;
+}
+
+/* Портфолио */
+
+.portfolio {
+	margin-bottom: 200px;
+}
+
+.port__slide {
+	list-style: none;
+	display: flex;
+	justify-content: right;
+	gap: 10px;
+	margin-bottom: 48px;
+}
+
+.slide__item {
+	font-size: 25px;
+	border-radius: 50%;
+	padding: 10px 11px;
+	transition: .25s linear;
+}
+
+.port__back,
+.port__next {
+	color: #424551;
+	text-decoration: none;
+}
+
+.slide__item:hover {
+	background-color: #FF5A30;
+	color: #FFFFFF;
+}
+
+.slide__item:hover .port__back {
+	color: #FFFFFF;
+}
+
+.slide__item:hover .port__next {
+	color: #FFFFFF;
+}
+
+.port__card {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+}
+
+.port__item {
+	text-align: center;
+	transition: .25s linear;
+}
+
+.port__item:hover {
+	box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.06);
+}
+
+.card__head {
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1E212C;
+	padding-top: 16px;
+}
+
+.card__text {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 400;
+	color: #787A80;
+	padding: 5px 0 24px 0;
+}
+
+.card__view {
+	text-decoration: none;
+	color: #FF5A30;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid #FF5A30;
+	border-radius: 5px;
+	padding: 10px 25px;
+	display:inline-block;
+	margin-bottom: 50px;
+	transition: .25s linear;
+}
+
+.card__view:hover {
+	color: #FFFFFF;
+	background-color: #FF5A30;
+}
+
+/* Клиенты */
+
+.client__items {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 60px 0 180px 0;
 }
