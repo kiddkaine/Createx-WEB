@@ -230,6 +230,10 @@
 	width:60%;
 }
 
+.block__heading-wdth {
+	text-align: left;
+}
+
 .block__text {
 	font-size: 18px;
 	color: #787A80;
@@ -542,10 +546,97 @@
 
 /* Клиенты */
 
+.clients {
+	margin-bottom: 120px;
+}
+
 .client__items {
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 60px 0 180px 0;
+}
+
+.client__comments {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	gap: 135px;
+}
+
+.profile__slider {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.profile__img {
+	padding: 60px 0 24px 0;
+}
+
+.prof__slide {
+	list-style: none;
+	display: flex;
+	gap: 10px;
+}
+
+.prof__back, .prof__next {
+	font-size: 20px;
+	color: #424551;
+	text-decoration: none;
+	border-radius: 50%;
+	padding: 11px 12px;
+	transition: .25s linear;
+}
+
+.prof__back:hover,
+.prof__next:hover {
+	background-color: #FF5A30;
+	color: #FFFFFF;
+}
+
+.comment__text {
+	margin: 0;
+	padding-bottom: 24px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #424551;
+}
+
+.name {
+	margin: 0;
+	padding-bottom: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1E212C;
+}
+
+.company__name {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 400;
+	color: #787A80;
+}
+
+/* Статистика */
+
+.statistic__items {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	gap: 50px;
+}
+
+.statistic__item {
+	margin: 60px 0 180px 0;
+}
+
+.statistic__text {
+	margin: 0;
+	padding-top: 20px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #1E212C;
+	text-align: center;
 }
