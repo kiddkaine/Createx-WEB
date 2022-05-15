@@ -1,0 +1,169 @@
+@media (max-width: 1366px) {
+	.slide__back,
+	.slide__next {
+		display: none;
+	}
+
+	.text {
+		margin: 0;
+	}
+
+	.page__items {
+		margin: 0;
+	}
+	.slider__block {
+		display: flex;
+    	flex-direction: column;
+    	gap: 75px;
+		padding: 20px 40px;
+		justify-content: center;
+		height: 100vh;
+	}
+}
+
+@media (max-width: 992px) {
+	.block__heading-left {
+		text-align: center;
+		width: 100%;
+	}
+
+	.port__card {
+		flex-direction: column;
+		align-items: center;
+		gap: 25px;
+	}
+
+	.news__blocks {
+		flex-direction: column;
+	}
+
+	.form__application {
+		left: 0;
+	}
+
+	.main__block {
+		align-items: center;display: flex;flex-direction: column;
+	}
+
+	.news__text {
+		text-align: center;
+	}
+
+	.block__photo {
+		width: 100%;
+	}
+
+	.menu__link {
+		font-size: 12px;
+	}
+
+	.contact__text {
+		font-size: 8px;
+	}
+
+	.contact__data {
+		font-size: 14px;
+	}
+
+	.card__img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.boxes__values {
+		flex-direction: column;
+		gap: 75px;
+	}
+
+	.boxes__item {
+		padding: 0;
+		border-right: 0;
+	}
+
+	.service__idle {
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	.service__item {
+		width: 100%;
+	}
+
+	.client__items {
+		flex-direction: column;
+		gap: 25px;
+	}
+
+	.comment__photo {
+		display: none;
+	}
+
+	.request__form {
+		flex-direction: column;
+	}
+
+	.btn__form {
+		display: block;
+		margin-left: 0;
+		margin-top: 24px;
+	}
+
+	.statistic__items {
+		flex-direction: column;
+		align-items: center;
+		margin: 60px 0 120px 0;
+	}
+
+	.statistic__item {
+		margin: 0;
+	}
+
+	.form__application {
+		width: 100%;
+	}
+
+	.heading {
+		width: 100%;
+		font-size: 48px;
+	}
+
+	.text {
+		width: 100%;
+	}
+
+	.btn__items {
+		flex-direction: column;
+		gap: 50px;
+	}
+
+	.page__items {
+		display: none;
+	}
+
+	.footer__item {
+		flex-direction: column;
+	}
+
+	.logo__links {
+		width: 100%;
+	}
+
+	.email__block {
+		width: 100%;
+	}
+
+	.main__info--links {
+		gap: 25px;
+	}
+
+	.header {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.menu,
+	.contact__action {
+		margin-left: 0;
+	}
+}
